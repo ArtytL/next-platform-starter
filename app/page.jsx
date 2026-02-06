@@ -1,8 +1,7 @@
-// app/page.tsx
+// app/page.jsx
 export default function Home() {
   return (
     <main className="home">
-      {/* optional watermark pattern */}
       <div className="watermark" aria-hidden="true" />
 
       <div className="wrap">
@@ -30,5 +29,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  );
+  )
 }
