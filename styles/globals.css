@@ -78,10 +78,8 @@ body {
   display: inline-block;
   margin-top: 26px;
   padding: 18px 76px;
-  font-size: 56px;
-  font-weight: 900;
-  line-height: 1;
-  text-decoration: none;
+  font-size: 52px;
+  font-family: 'Chula One', serif;
   color: #08384f;
   background: #1fe3db;
   box-shadow: 0 14px 0 rgba(0,0,0,.28);
