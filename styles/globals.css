@@ -1,97 +1,67 @@
-
+/* ===== Google Font ===== */
 @import url('https://fonts.googleapis.com/css2?family=Chula+One&display=swap');
 
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
-  margin: 0;
-  padding: 0;
-  background: #1b3f8c;
-  color: #fff;
-  font-family: 'Chula One', serif;
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-/* หน้า HOME */
-.home{
+body {
+  font-family: 'Chula One', serif;
+  background: linear-gradient(180deg, #0b2a78 0%, #071a3f 100%);
+  color: #ffffff;
+}
+
+/* ===== Layout ===== */
+.home {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  text-align: center;
+  padding: 60px 20px;
   position: relative;
   overflow: hidden;
-  padding: 48px 20px;
-  background: #1b3f8c; /* ล็อคอีกชั้น */
 }
 
-/* เกรน/texture เบาๆ ให้คล้ายตัวอย่าง */
-.noise{
+/* subtle texture dots */
+.home::before {
+  content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.08;
-  pointer-events: none;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
   background-size: 220px 220px;
+  opacity: 0.15;
+  pointer-events: none;
 }
 
-.container{
+/* ===== Content Wrapper ===== */
+.wrap {
   width: 100%;
-  max-width: 1100px;
-  text-align: center;
+  max-width: 1000px;
   position: relative;
   z-index: 1;
 }
 
-.hero{
-  font-size: clamp(56px, 7vw, 96px);
-  font-weight: normal;
+/* ===== Title ===== */
+.title {
+  font-size: clamp(52px, 7vw, 92px);
   letter-spacing: 1px;
+  margin-bottom: 40px;
 }
 
-.cols{
+/* ===== Grid Section ===== */
+.grid {
   display: grid;
+  gap: 60px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 90px;
-  align-items: start;
-  justify-items: center;
 }
 
-.col{
-  width: 100%;
-  max-width: 460px;
-}
-
-.headline{
-  font-size: 34px;
-  font-weight: 800;
-  margin: 0 0 12px;
-}
-
-.sub{
-  font-size: 26px;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.cta{
-  display: inline-block;
-  margin-top: 26px;
-  padding: 18px 76px;
-  font-size: 52px;
-  font-family: 'Chula One', serif;
-  color: #08384f;
-  background: #1fe3db;
-  box-shadow: 0 14px 0 rgba(0,0,0,.28);
-}
-
-.cta:active{
-  transform: translateY(4px);
-  box-shadow: 0 10px 0 rgba(0,0,0,.28);
-}
-
-/* มือถือ */
-@media (max-width: 900px){
-  .cols{ grid-template-columns: 1fr; gap: 44px; }
-  .headline{ font-size: 30px; }
-  .sub{ font-size: 22px; }
-  .cta{ font-size: 52px; padding: 16px 70px; }
-}
+/* ===== Card ===== */
+.card {
+  padding: 10px 10p
