@@ -1,14 +1,25 @@
+/* ===== ปุ่มรูปภาพ ===== */
 .imgBtn {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 20px;
   transition: transform .15s ease, filter .15s ease;
 }
 
 .imgBtn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   filter: brightness(1.05);
 }
 
 .imgBtn:active {
   transform: translateY(2px);
+}
+
+.btnImgWrap {
+  position: relative;
+  width: 320px;   /* ปรับความกว้างปุ่มได้ */
+  height: 140px;  /* ปรับความสูงกรอบได้ */
+}
+
+.btnImgWrap img {
+  object-fit: contain;
 }
