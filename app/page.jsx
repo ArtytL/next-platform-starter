@@ -16,13 +16,16 @@ export default function Home() {
             </div>
 
             <a href="/voter" className="imgBtn">
-              <Image
-                src="/btn-check.png"
-                alt="ตรวจสอบสิทธิเลือกตั้ง"
-                width={280}
-                height={90}
-                priority
-              />
+              <div className="btnImgWrap">
+                <Image
+                  src="/red-button.png"
+                  alt="ปุ่มตรวจสอบสิทธิเลือกตั้ง"
+                  fill
+                  sizes="320px"
+                  style={{ objectFit: 'contain' }}
+                  priority
+                />
+              </div>
             </a>
           </div>
 
@@ -34,12 +37,15 @@ export default function Home() {
             </div>
 
             <a href="/referendum" className="imgBtn">
-              <Image
-                src="/btn-referendum.png"
-                alt="ตรวจสอบสิทธิประชามติ"
-                width={280}
-                height={90}
-              />
+              <div className="btnImgWrap">
+                <Image
+                  src="/red-button.png"
+                  alt="ปุ่มตรวจสอบสิทธิประชามติ"
+                  fill
+                  sizes="320px"
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
             </a>
           </div>
         </div>
