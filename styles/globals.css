@@ -1,4 +1,6 @@
 /* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Chula+One&display=swap');
+
 
 /* RESET + กันสไตล์เดิมของ template มาทับ */
 * { box-sizing: border-box; }
@@ -6,7 +8,7 @@ html, body { height: 100%; }
 body {
   margin: 0;
   padding: 0;
-  background: #1b3f8c; /* ล็อคพื้นหลังทั้งเว็บ */
+  background: #1b3f8c;
   color: #fff;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
