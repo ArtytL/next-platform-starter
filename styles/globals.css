@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chula+One&display=swap');
 
-/* styles/globals.css */
-/* RESET + กันสไตล์เดิมของ template มาทับ */
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
