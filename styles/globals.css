@@ -10,8 +10,9 @@ body {
   padding: 0;
   background: #1b3f8c;
   color: #fff;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: 'Chula One', serif;
 }
+
 
 /* หน้า HOME */
 .home{
