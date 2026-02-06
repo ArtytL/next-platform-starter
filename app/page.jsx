@@ -11,4 +11,24 @@ export default function Home() {
         <div className="cols">
           <section className="col">
             <h2 className="headline">ตรวจสอบรายละเอียด</h2>
-            <p className="sub">ผู้มีสิทธิเลือกตั้
+            <p className="sub">ผู้มีสิทธิเลือกตั้ง</p>
+            <p className="sub">สมาชิกสภาผู้แทนราษฎร (สส.)</p>
+
+            <a className="cta" href="/voter">
+              คลิก
+            </a>
+          </section>
+
+          <section className="col">
+            <h2 className="headline">ตรวจสอบรายละเอียด</h2>
+            <p className="sub">ผู้มีสิทธิออกเสียงประชามติ</p>
+
+            <a className="cta" href="/referendum">
+              คลิก
+            </a>
+          </section>
+        </div>
+      </div>
+    </main>
+  )
+}
