@@ -1,52 +1,52 @@
+// app/page.jsx
 import Image from 'next/image'
+
 export default function Home() {
   return (
     <main className="home">
+      <div className="watermark" aria-hidden="true" />
+
       <div className="wrap">
         <h1 className="title">เลือกตั้ง 69</h1>
 
         <div className="grid">
-          {/* กล่องที่ 1 */}
-          <div className="card">
+          <section className="card">
             <div className="cardTitle">ตรวจสอบรายละเอียด</div>
             <div className="cardSub">
               ผู้มีสิทธิเลือกตั้ง<br />
               สมาชิกสภาผู้แทนราษฎร (ส.ส.)
             </div>
 
-            <a href="/voter" className="imgBtn">
-              <div className="btnImgWrap">
+            <a href="/voter" className="imgBtn" aria-label="ไปหน้าตรวจสอบผู้มีสิทธิเลือกตั้ง">
+              <span className="btnImgWrap">
                 <Image
                   src="/red-button.png"
-                  alt="ปุ่มตรวจสอบสิทธิเลือกตั้ง"
+                  alt=""
                   fill
-                  sizes="320px"
+                  sizes="(max-width: 820px) 260px, 320px"
                   style={{ objectFit: 'contain' }}
                   priority
                 />
-              </div>
+              </span>
             </a>
-          </div>
+          </section>
 
-          {/* กล่องที่ 2 */}
-          <div className="card">
+          <section className="card">
             <div className="cardTitle">ตรวจสอบรายละเอียด</div>
-            <div className="cardSub">
-              ผู้มีสิทธิออกเสียงประชามติ
-            </div>
+            <div className="cardSub">ผู้มีสิทธิออกเสียงประชามติ</div>
 
-            <a href="/referendum" className="imgBtn">
-              <div className="btnImgWrap">
+            <a href="/referendum" className="imgBtn" aria-label="ไปหน้าตรวจสอบผู้มีสิทธิประชามติ">
+              <span className="btnImgWrap">
                 <Image
                   src="/red-button.png"
-                  alt="ปุ่มตรวจสอบสิทธิประชามติ"
+                  alt=""
                   fill
-                  sizes="320px"
+                  sizes="(max-width: 820px) 260px, 320px"
                   style={{ objectFit: 'contain' }}
                 />
-              </div>
+              </span>
             </a>
-          </div>
+          </section>
         </div>
       </div>
     </main>
