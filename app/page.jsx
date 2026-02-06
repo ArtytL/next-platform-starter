@@ -1,32 +1,47 @@
-// app/page.jsx
 import Image from 'next/image'
+
 export default function Home() {
   return (
     <main className="home">
-      <div className="noise" aria-hidden="true" />
+      <div className="wrap">
+        <h1 className="title">เลือกตั้ง 69</h1>
 
-      <div className="container">
-        <h1 className="hero">เลือกตั้ง 69</h1>
+        <div className="grid">
+          {/* กล่องที่ 1 */}
+          <div className="card">
+            <div className="cardTitle">ตรวจสอบรายละเอียด</div>
+            <div className="cardSub">
+              ผู้มีสิทธิเลือกตั้ง<br />
+              สมาชิกสภาผู้แทนราษฎร (ส.ส.)
+            </div>
 
-        <div className="cols">
-          <section className="col">
-            <h2 className="headline">ตรวจสอบรายละเอียด</h2>
-            <p className="sub">ผู้มีสิทธิเลือกตั้ง</p>
-            <p className="sub">สมาชิกสภาผู้แทนราษฎร (สส.)</p>
-
-            <a className="cta" href="/voter">
-              คลิก
+            <a href="/voter" className="imgBtn">
+              <Image
+                src="/btn-check.png"
+                alt="ตรวจสอบสิทธิเลือกตั้ง"
+                width={280}
+                height={90}
+                priority
+              />
             </a>
-          </section>
+          </div>
 
-          <section className="col">
-            <h2 className="headline">ตรวจสอบรายละเอียด</h2>
-            <p className="sub">ผู้มีสิทธิออกเสียงประชามติ</p>
+          {/* กล่องที่ 2 */}
+          <div className="card">
+            <div className="cardTitle">ตรวจสอบรายละเอียด</div>
+            <div className="cardSub">
+              ผู้มีสิทธิออกเสียงประชามติ
+            </div>
 
-            <a className="cta" href="/referendum">
-              คลิก
+            <a href="/referendum" className="imgBtn">
+              <Image
+                src="/btn-referendum.png"
+                alt="ตรวจสอบสิทธิประชามติ"
+                width={280}
+                height={90}
+              />
             </a>
-          </section>
+          </div>
         </div>
       </div>
     </main>
