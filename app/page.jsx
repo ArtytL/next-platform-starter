@@ -1,33 +1,14 @@
 // app/page.jsx
+
 export default function Home() {
   return (
     <main className="home">
-      <div className="watermark" aria-hidden="true" />
+      <div className="noise" aria-hidden="true" />
 
-      <div className="wrap">
-        <h1 className="title">เลือกตั้ง 69</h1>
+      <div className="container">
+        <h1 className="hero">เลือกตั้ง 69</h1>
 
-        <div className="grid">
-          <section className="card">
-            <h2 className="cardTitle">ตรวจสอบรายละเอียด</h2>
-            <p className="cardSub">ผู้มีสิทธิเลือกตั้ง</p>
-            <p className="cardSub">สมาชิกสภาผู้แทนราษฎร (สส.)</p>
-
-            <a className="btn" href="/voter">
-              คลิก
-            </a>
-          </section>
-
-          <section className="card">
-            <h2 className="cardTitle">ตรวจสอบรายละเอียด</h2>
-            <p className="cardSub">ผู้มีสิทธิออกเสียงประชามติ</p>
-
-            <a className="btn" href="/referendum">
-              คลิก
-            </a>
-          </section>
-        </div>
-      </div>
-    </main>
-  )
-}
+        <div className="cols">
+          <section className="col">
+            <h2 className="headline">ตรวจสอบรายละเอียด</h2>
+            <p className="sub">ผู้มีสิทธิเลือกตั้
