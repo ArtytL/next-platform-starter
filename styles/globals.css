@@ -12,12 +12,15 @@ body {
 
 .home {
   min-height: 100vh;
+  display: grid;
+  place-items: center;
   position: relative;
-  overflow: hidden;
+  background-color: #2A7C2E; /* สีเขียวใหม่ */
   color: #fff;
-  padding: 56px 20px;
-  background: linear-gradient(180deg, #0b2a78 0%, #071a3f 100%);
+  padding: 48px 20px;
+  overflow: hidden;
 }
+
 
 .watermark {
   position: absolute;
