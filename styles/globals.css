@@ -1,122 +1,14 @@
-/* ===== Google Font Fallback (ใช้แทน Sukhumvit บางเครื่อง) ===== */
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
-
-/* ===== Reset ===== */
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  font-family: 'Sukhumvit Set', 'Sarabun', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(180deg, #0b2a78 0%, #071a3f 100%);
-  color: #ffffff;
-}
-
-/* ===== Layout ===== */
-.home {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 60px 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* subtle texture dots */
-.home::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
-  background-size: 220px 220px;
-  opacity: 0.15;
-  pointer-events: none;
-}
-
-/* ===== Content Wrapper ===== */
-.wrap {
-  width: 100%;
-  max-width: 1000px;
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== Title ===== */
-.title {
-  font-size: clamp(52px, 7vw, 92px);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  margin-bottom: 40px;
-}
-
-/* ===== Grid Section ===== */
-.grid {
-  display: grid;
-  gap: 60px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-/* ===== Card ===== */
-.card {
-  padding: 10px 10px 30px;
-}
-
-.cardTitle {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.cardSub {
-  font-size: 22px;
-  opacity: 0.95;
-  margin-bottom: 24px;
-  line-height: 1.5;
-}
-
-/* ===== Button ===== */
-.btn {
+.imgBtn {
   display: inline-block;
   margin-top: 10px;
-  padding: 18px 70px;
-  font-size: 44px;
-  font-weight: 700;
-  font-family: 'Sukhumvit Set', 'Sarabun', sans-serif;
-  color: #08384f;
-  background: #20e0d8;
-  border-radius: 6px;
-  text-decoration: none;
-  box-shadow: 0 14px 0 rgba(0,0,0,.3);
-  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  transition: transform .15s ease, filter .15s ease;
 }
 
-.btn:hover {
+.imgBtn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 28px rgba(0,0,0,.4);
   filter: brightness(1.05);
 }
 
-.btn:active {
+.imgBtn:active {
   transform: translateY(2px);
-  box-shadow: 0 6px 0 rgba(0,0,0,.3);
-}
-
-/* ===== Mobile ===== */
-@media (max-width: 820px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .btn {
-    font-size: 38px;
-    padding: 16px 60px;
-  }
 }
