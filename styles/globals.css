@@ -20,7 +20,9 @@ body {
   padding: 48px 20px;
   overflow: hidden;
 }
-
+body {
+  background-color: #2A7C2E;
+}
 
 .watermark {
   position: absolute;
